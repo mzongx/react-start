@@ -46,8 +46,8 @@ webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br>
 
 
 
-###5.在终端中运行webpack
+5.在终端中运行webpack
 
 
-###6.成功
+6.成功
 
