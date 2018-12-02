@@ -13,7 +13,7 @@ module.exports = {
             loader: 'babel-loader'
           }
         ],
-        exclude: /node_modules/
+        exclude: /node_modules/ // 不包括node_modules目录
       }
     ]
   },
@@ -21,5 +21,5 @@ module.exports = {
     path: __dirname + '/src/', // 目标输出目录 path 的绝对路径
     filename: 'bundle.js' // 用于输出文件的文件名
   },
-  mode: 'development'
+  mode: 'development' // 这是webpack4.0要求配置的
 }
