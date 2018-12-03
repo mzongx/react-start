@@ -51,4 +51,42 @@ webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br>
 
 #### 6.成功
 
-![image](https://github.com/mzongx/react-start/blob/master/images/14.png)
+![image](https://github.com/mzongx/react-start/blob/master/images/14.png)  
+  
+## 四、 热加载&自动刷新  
+在热加载之前，每次修改index.js中的内容就需要再webpack编译一次，这样很麻烦，而热加载就能再修改代码的同时自动刷新浏览器  
+  
+### 1.如果使用webpack --watch命令的话，会实时监测文件改动，无需重新编译webpack，需要手动刷新浏览器。  
+![image](https://github.com/mzongx/react-start/blob/master/images/15.png)  
+  
+### 2.使用webpack-dev-server实现自动刷新  
+  
+命令行直接输入`webpack-dev-server`，就可以实现自动刷新（这是iframe模式）  
+但是需要将本地index.html的js链接改为http://localhost:8080/bundle.js,才可以（因为本地是不改变的，编译的是虚拟的）。参考：https://segmentfault.com/q/1010000007299989 https://webpack.docschina.org/configuration/dev-server/#devserver-publicpath-  
+  
+### 3.自动刷新是整个页面都会刷新，而热加载会只会刷新局部(inline模式)  
+  
+上面的热加载是通过命令行实现的，为了方便，我们把它写进配置
+  ![image](https://github.com/mzongx/react-start/blob/master/images/16.png)  
+然后把package.json中的script改为  
+  
+`"dev": "webpack-dev-server --config webpack.config.js"`  
+然后启动`npm run dev`来编译，成功启动了热加载  
+   ![image](https://github.com/mzongx/react-start/blob/master/images/17.png)  
+### 5.自动把js文件加入都html中，使用html-webpack-plugin插件  
+  
+先安装`npm i html-webpack-plugin --save`  
+  
+ ![image](https://github.com/mzongx/react-start/blob/master/images/18.png)  
+
+然后配置webpack.config.js文件  
+  const HtmlWebpackPlugin = require('html-webpack-plugin')
+new HtmlWebpackPlugin({
+  title: 'React Demo',
+  template: path.resolve(__dirname, 'index.html')
+})
+  
+执行 npm run dev，就可以看到自动加入了js  
+ ![image](https://github.com/mzongx/react-start/blob/master/images/19.png)
+
+
