@@ -23,19 +23,18 @@
 ![image](https://github.com/mzongx/react-start/blob/master/images/07.png)<br> 
 
 ## 三、安装，配置webpack
-###1. 先全局安装webpack，主要用来webpack命令行 <br>
+#### 1. 先全局安装webpack，主要用来webpack命令行 <br>
 `npm webpack webpack-dev-server -g`
 
-###2.在目录的文件夹继续安装 <br>
+#### 2.在目录的文件夹继续安装 <br>
 `npm webpack webpack-dev-server -save`<br> 
 webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br> 
 
 ![image](https://github.com/mzongx/react-start/blob/master/images/08.png)
-
-###3.在根目录创建一个webpack.config.js配置webpack,此时的目录结构
+#### 3.在根目录创建一个webpack.config.js配置webpack,此时的目录结构
 ![image](https://github.com/mzongx/react-start/blob/master/images/09.png)
 
-###4.webpack.config.js配置
+#### 4.webpack.config.js配置
 需要安装babel-loader,用来解析es6语法等，
 此时的package.json<br> 
 
@@ -46,9 +45,9 @@ webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br>
 
 ![image](https://github.com/mzongx/react-start/blob/master/images/12.png)
 
-5.在终端中运行webpack
+#### 5.在终端中运行webpack
 ![image](https://github.com/mzongx/react-start/blob/master/images/13.png)
 
-6.成功
+#### 6.成功
 
 ![image](https://github.com/mzongx/react-start/blob/master/images/14.png)
