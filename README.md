@@ -62,7 +62,9 @@ webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br>
 ### 2.使用webpack-dev-server实现自动刷新  
   
 命令行直接输入`webpack-dev-server`，就可以实现自动刷新（这是iframe模式）  
-但是需要将本地index.html的js链接改为http://localhost:8080/bundle.js,才可以（因为本地是不改变的，编译的是虚拟的）。参考：https://segmentfault.com/q/1010000007299989 https://webpack.docschina.org/configuration/dev-server/#devserver-publicpath-  
+但是需要将本地index.html的js链接改为http://localhost:8080/bundle.js,才可以（因为本地是不改变的，编译的是虚拟的）。  
+参考：[相关devServer问题](https://segmentfault.com/q/1010000007299989)  
+[webpack配置](https://webpack.docschina.org/configuration/dev-server/#devserver-publicpath-) 
   
 ### 3.自动刷新是整个页面都会刷新，而热加载会只会刷新局部(inline模式)  
   
@@ -80,11 +82,12 @@ webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br>
  ![image](https://github.com/mzongx/react-start/blob/master/images/18.png)  
 
 然后配置webpack.config.js文件  
-  const HtmlWebpackPlugin = require('html-webpack-plugin')
+```const HtmlWebpackPlugin = require('html-webpack-plugin')
 new HtmlWebpackPlugin({
   title: 'React Demo',
   template: path.resolve(__dirname, 'index.html')
 })
+```
   
 执行 npm run dev，就可以看到自动加入了js  
  ![image](https://github.com/mzongx/react-start/blob/master/images/19.png)
