@@ -1,5 +1,8 @@
 # react-start
-  前言：简单搭配react开发环境
+  前言：简单搭配react开发环境,可以clone本地执行以下命令查看效果。
+
+  `npm install`  
+  `npm run dev`  
 
 ## 一、新建一个文件夹，然后npm初始化项目，使用命令npm init，会生成一个package.json依赖包
 
