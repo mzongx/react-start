@@ -8,7 +8,7 @@
 
 ## 二、安装react所需要的模块，创建入口文件
 `npm i react react-dom babelify --save` <br> 
-`npm i babel-preset-es2015 babel-preset-react --save` (这是为了在代码中使用ES6和JSX)<br> 
+`npm i babel-preset-es2015 babel-preset-react --save` (这是为了在代码中使用ES6和JSX)    
 ![image](https://github.com/mzongx/react-start/blob/master/images/03.png)<br> 
 
 目录结构，在根目录创建一个src目录，来放源代码，在src的js创建一个index.js入口文件<br> 
@@ -19,7 +19,7 @@
 
 ![image](https://github.com/mzongx/react-start/blob/master/images/06.png)<br> 
 
-此时项目是运行不起来的，因为上面的包需要webpack来编译，否则识别不了jsx和require语法<br> 
+此时项目是运行不起来的，因为上面的包需要webpack来编译，否则识别不了jsx和require语法    
 ![image](https://github.com/mzongx/react-start/blob/master/images/07.png)<br> 
 
 ## 三、安装，配置webpack
@@ -40,7 +40,7 @@ webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br>
 
 ![image](https://github.com/mzongx/react-start/blob/master/images/10.png)
 
-安装babel-loader之后，需要再根目录创建一个.babelrc的文件，配置一下内容，才可以解析<br> 
+安装babel-loader之后，需要再根目录创建一个.babelrc的文件，配置一下内容，才可以解析    
 ![image](https://github.com/mzongx/react-start/blob/master/images/11.png)<br> 
 
 ![image](https://github.com/mzongx/react-start/blob/master/images/12.png)
