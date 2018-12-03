@@ -42,12 +42,13 @@ webapck4.0版本要安装webpack-cli才可以使用webpack命令。<br>
 ![image](https://github.com/mzongx/react-start/blob/master/images/10.png)
 
 安装babel-loader之后，需要再根目录创建一个.babelrc的文件，配置一下内容，才可以解析<br> 
+![image](https://github.com/mzongx/react-start/blob/master/images/11.png)<br> 
 
-
-
+![image](https://github.com/mzongx/react-start/blob/master/images/12.png)
 
 5.在终端中运行webpack
-
+![image](https://github.com/mzongx/react-start/blob/master/images/13.png)
 
 6.成功
 
+![image](https://github.com/mzongx/react-start/blob/master/images/14.png)
