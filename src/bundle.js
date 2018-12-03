@@ -225,7 +225,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var React = __webpack_require__(/*! react */ \"../node_modules/_react@16.6.3@react/index.js\");\nvar ReactDom = __webpack_require__(/*! react-dom */ \"../node_modules/_react-dom@16.6.3@react-dom/index.js\");\n\nReactDom.render(React.createElement(\n  'h1',\n  null,\n  'Hello World, Hello Mzong!!!'\n), document.getElementById('app'));\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("var React = __webpack_require__(/*! react */ \"../node_modules/_react@16.6.3@react/index.js\");\nvar ReactDom = __webpack_require__(/*! react-dom */ \"../node_modules/_react-dom@16.6.3@react-dom/index.js\");\n\nReactDom.render(React.createElement(\n  'h1',\n  null,\n  'Hello World!'\n), document.getElementById('app'));\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ })
 
