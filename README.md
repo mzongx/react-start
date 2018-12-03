@@ -8,7 +8,7 @@
 
 ## 二、安装react所需要的模块，创建入口文件
 `npm i react react-dom babelify --save` <br> 
-`npm i babel-preset-es2015 babel-preset-react --save` (这是为了在代码中使用ES6和JSX)    
+`npm i babel-preset-es2015 babel-preset-react --save` (这是为了在代码中使用ES6和JSX)      
 ![image](https://github.com/mzongx/react-start/blob/master/images/03.png)<br> 
 
 目录结构，在根目录创建一个src目录，来放源代码，在src的js创建一个index.js入口文件<br> 
